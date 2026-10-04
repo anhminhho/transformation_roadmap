@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QBR Dashboard | Nike Transformation Roadmap</title>
+<style>
+:root{--bg:#f2f2ee;--ink:#161616;--mute:#5d5d58;--card:#fff;--line:#d9d9d2;
+--g:#1f8a4c;--a:#d98b00;--r:#c8372d;--gbg:#e3f3ea;--abg:#fbf0d9;--rbg:#f9e1de}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#f1f1ec;--mute:#a4a49c;--card:#1e1e1e;--line:#3a3a36;
+--g:#4cc882;--a:#f0b030;--r:#f06a60;--gbg:#17301f;--abg:#35290c;--rbg:#3a1a17}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif;font-size:13px;line-height:1.35}
+.page{max-width:1200px;margin:0 auto;padding:16px 20px;padding-top:max(16px,env(safe-area-inset-top,0px))}
+header{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;border-bottom:3px solid var(--ink);padding-bottom:10px}
+h1{font-family:Impact,"Arial Narrow Bold","Helvetica Neue",Arial,sans-serif;font-weight:400;font-size:30px;letter-spacing:.5px;margin:0;font-style:italic}
+.sub{color:var(--mute);margin-top:2px}
+.health{display:flex;gap:10px;align-items:center;background:var(--abg);border:2px solid var(--a);border-radius:6px;padding:8px 12px;max-width:470px}
+.dot{width:18px;height:18px;border-radius:50%;background:var(--a);flex:none}
+.health b{display:block}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.phase{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.ph{padding:8px 12px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
+.ph h2{margin:0;font-size:15px}
+.ph small{color:var(--mute)}
+.tag{font-weight:700;font-size:12px;padding:2px 8px;border-radius:10px}
+.tag.g{background:var(--gbg);color:var(--g)}.tag.a{background:var(--abg);color:var(--a)}.tag.r{background:var(--rbg);color:var(--r)}.tag.n{background:var(--line);color:var(--mute)}
+.m{padding:9px 12px;border-bottom:1px solid var(--line)}
+.m:last-child{border-bottom:0}
+.mt{display:flex;justify-content:space-between;gap:8px}
+.name{font-weight:700}
+.init{color:var(--mute);font-size:11.5px}
+.kind{font-size:11px;color:var(--mute);border:1px solid var(--line);border-radius:3px;padding:0 4px;white-space:nowrap;height:fit-content}
+.row{display:flex;align-items:center;gap:10px;margin-top:5px}
+.val{font-size:22px;font-weight:800;min-width:64px}
+.bar{flex:1;height:10px;background:var(--line);border-radius:5px;position:relative}
+.fill{position:absolute;left:0;top:0;bottom:0;border-radius:5px}
+.fill.g{background:var(--g)}.fill.a{background:var(--a)}.fill.r{background:var(--r)}
+.tick{position:absolute;right:0;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.tg{font-size:11.5px;color:var(--mute);white-space:nowrap}
+.st{font-weight:700;font-size:11.5px;white-space:nowrap}
+.st.g{color:var(--g)}.st.a{color:var(--a)}.st.r{color:var(--r)}
+.bottom{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:12px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 14px}
+.box h2{margin:0 0 6px;font-size:15px}
+.dec{display:grid;grid-template-columns:150px 1fr;gap:2px 10px;padding:7px 0;border-top:1px solid var(--line)}
+.dec:first-of-type{border-top:0}
+.who{font-weight:700;grid-row:span 2;align-self:start;font-size:12px;background:var(--ink);color:var(--bg);padding:3px 8px;border-radius:3px}
+.who small{display:block;font-weight:400}
+.legend span{margin-right:12px;white-space:nowrap}
+.note{margin-top:10px;color:var(--mute);font-size:11px}
+@media(max-width:900px){.phases,.bottom,header{grid-template-columns:1fr}}
+@media print{@page{size:landscape;margin:8mm}body{font-size:10px}.page{padding:0}.val{font-size:17px}.m{padding:5px 10px}}
+nav a{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="page">
+<nav style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px;font-weight:600"><a href="index.html">About Us</a><a href="roadmap.html">Transformation Roadmap</a><a href="raci.html">Governance RACI</a><a href="dashboard.html">QBR Dashboard</a></nav>
+<header>
+  <div>
+    <h1>NIKE Consumer Direct Transformation</h1>
+    <div class="sub">Quarterly business review · Current quarter: Q5 of the roadmap (Walk phase under way) · Case window 2017–2022</div>
+  </div>
+  <div class="health" role="status">
+    <div class="dot" aria-hidden="true"></div>
+    <div><b>Overall health: Amber, slightly behind plan</b>Crawl foundations are in place, but NIKE Hyperlive trails its target and cross-team engagement is slipping ahead of Run.</div>
+  </div>
+</header>
+
+<section class="phases" aria-label="Phase status">
+  <!-- CRAWL -->
+  <div class="phase">
+    <div class="ph"><div><h2>Crawl: Foundation</h2><small>Q1–Q4 · 3 initiatives</small></div><span class="tag g">On track</span></div>
+    <div class="m"><div class="mt"><div><div class="name">Active NikePlus members</div><div class="init">NikePlus Membership</div></div><span class="kind">Leading · illustrative</span></div>
+      <div class="row"><span class="val">88M</span><div class="bar"><div class="fill g" style="width:88%"></div><div class="tick"></div></div><span class="tg">Target 100M</span><span class="st g">On track</span></div></div>
+    <div class="m"><div class="mt"><div><div class="name">Local assortment decisions using consumer analytics</div><div class="init">Data &amp; Analytics Capabilities</div></div><span class="kind">Leading · illustrative</span></div>
+      <div class="row"><span class="val">62%</span><div class="bar"><div class="fill g" style="width:78%"></div><div class="tick"></div></div><span class="tg">Target 80%</span><span class="st g">On track</span></div></div>
+    <div class="m"><div class="mt"><div><div class="name">Concept-to-shelf cycle time cut</div><div class="init">2X Speed and End-to-End Digital Capabilities</div></div><span class="kind">Lagging · illustrative</span></div>
+      <div class="row"><span class="val">24%</span><div class="bar"><div class="fill a" style="width:60%"></div><div class="tick"></div></div><span class="tg">Target 40%</span><span class="st a">At risk</span></div></div>
+  </div>
+  <!-- WALK -->
+  <div class="phase">
+    <div class="ph"><div><h2>Walk: Deployment</h2><small>Q4–Q6 · 2 initiatives</small></div><span class="tag a">At risk</span></div>
+    <div class="m"><div class="mt"><div><div class="name">App use and conversion in pilot stores</div><div class="init">Nike App at Retail</div></div><span class="kind">Leading · illustrative</span></div>
+      <div class="row"><span class="val">31%</span><div class="bar"><div class="fill g" style="width:89%"></div><div class="tick"></div></div><span class="tg">Target 35%</span><span class="st g">On track</span></div></div>
+    <div class="m"><div class="mt"><div><div class="name">Sell-through lift vs. control stores</div><div class="init">NIKE Hyperlive</div></div><span class="kind">Lagging · illustrative</span></div>
+      <div class="row"><span class="val">+4%</span><div class="bar"><div class="fill r" style="width:40%"></div><div class="tick"></div></div><span class="tg">Target +10%</span><span class="st r">Off track</span></div></div>
+    <div class="m"><div class="init">Readiness gate for Run: both Walk outcomes must reach target before Run funding is released.</div></div>
+  </div>
+  <!-- RUN -->
+  <div class="phase">
+    <div class="ph"><div><h2>Run: Scale</h2><small>Q7–Q10 · 2 initiatives · not started</small></div><span class="tag n">Not started</span></div>
+    <div class="m"><div class="mt"><div><div class="name">Doors live with connected experience</div><div class="init">Nike Consumer Experiences at Scale</div></div><span class="kind">Leading · illustrative</span></div>
+      <div class="row"><span class="val">0%</span><div class="bar"><div class="fill g" style="width:0"></div><div class="tick"></div></div><span class="tg">Target 25% by Q8 (not yet due)</span><span class="st g">On track</span></div></div>
+    <div class="m"><div class="mt"><div><div class="name">Cross-functional engagement score</div><div class="init">Consumer Direct Acceleration (org change)</div></div><span class="kind">Leading · org health · illustrative</span></div>
+      <div class="row"><span class="val">3.4</span><div class="bar"><div class="fill a" style="width:68%"></div><div class="tick"></div></div><span class="tg">Target 4.2 / 5</span><span class="st a">At risk</span></div></div>
+    <div class="m"><div class="mt"><div><div class="name">NIKE Direct revenue growth, North America (FY2022 vs. FY2021)</div><div class="init">Consumer Direct Acceleration</div></div><span class="kind">Lagging · actual, FY2022 10-K</span></div>
+      <div class="row"><span class="val">+25%</span><div class="bar"><div class="fill g" style="width:100%"></div><div class="tick"></div></div><span class="tg">Target +20% (illustrative)</span><span class="st g">On track</span></div></div>
+  </div>
+</section>
+
+<section class="bottom">
+  <div class="box">
+    <h2>Decisions required this quarter <span class="init" style="font-weight:400">(from the <a href="raci.html">Governance RACI</a>)</span></h2>
+    <div class="dec"><span class="who">Consumer Experience Scale-Up<small>Accountable: Heidi O'Neill, President, Consumer &amp; Marketplace</small></span><b>Approve or hold the Run rollout of Nike Consumer Experiences at Scale</b><span class="init">NIKE Hyperlive is below its readiness gate (+4% vs. +10% target).</span></div>
+    <div class="dec"><span class="who">Budget Allocation<small>Accountable: John Donahoe, President &amp; CEO</small></span><b>Decide how Run funding is split if Hyperlive stays below target</b><span class="init">Cycle-time savings (2X Speed) are also at risk, so funding trade-offs are likely.</span></div>
+    <div class="dec"><span class="who">Data Governance<small>Accountable: Andrew Campion, COO</small></span><b>Set data access standards before connected experiences reach strategic partners</b><span class="init">Needed before Run extends beyond NIKE Direct to strategic marketplace partners.</span></div>
+  </div>
+  <div class="box">
+    <h2>How to read this</h2>
+    <div class="legend"><span style="color:var(--g)">● On track</span><span style="color:var(--a)">● At risk</span><span style="color:var(--r)">● Off track</span></div>
+    <p class="init" style="margin:6px 0 0">The bar shows progress to target; the black tick is the target. Leading metrics predict later results. Lagging metrics confirm them. 5 leading, 3 lagging (the org health score counts as leading). Decisions come from the Governance RACI.</p>
+  </div>
+</section>
+<p class="note"><b>Data note:</b> Only the NIKE Direct growth value is a reported figure (an FY2022 actual shown for reference, while the dashboard's illustrative "current quarter" is Q5 of the roadmap) (North America, NIKE FY2022 Form 10-K: NIKE Direct sales of $8,732M vs. $6,993M in FY2021). Nike does not publicly report the other metrics at this level, so their current values and all targets are <b>illustrative placeholders</b> for design purposes, marked on each card. Initiative names follow the team roadmap (NIKE 2017 Investor Day transcript; FY2018, FY2020, FY2022 Form 10-K).</p>
+</div>
+</body>
+</html>
