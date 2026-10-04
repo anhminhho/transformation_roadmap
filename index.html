@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>NIKE Consumer Direct Transformation</title>
 
     <style>
@@ -13,119 +14,212 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
+            background: #f4f4f4;
             color: #222;
             line-height: 1.6;
         }
 
+        /* ---------- HEADER ---------- */
+
         header {
             background: #111;
             color: white;
-            padding: 60px 20px;
+            padding: 75px 20px 65px;
             text-align: center;
         }
 
         header h1 {
-            margin: 0 0 10px;
-            font-size: 38px;
+            margin: 0 0 12px;
+            font-size: 42px;
+            letter-spacing: -1px;
         }
 
         header p {
             margin: 0;
             font-size: 18px;
+            color: #d8d8d8;
         }
 
+        /* ---------- MAIN ---------- */
+
         main {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 45px 20px;
         }
 
         section {
             background: white;
             margin-bottom: 30px;
-            padding: 30px;
-            border-radius: 10px;
+            padding: 35px;
+            border: 1px solid #dedede;
         }
 
         h2 {
             margin-top: 0;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
+            margin-bottom: 22px;
+            color: #111;
+            font-size: 27px;
         }
+
+        /* ---------- INTRO ---------- */
 
         .intro {
             text-align: center;
+            padding: 42px 50px;
+        }
+
+        .intro p {
+            max-width: 850px;
+            margin: 0 auto;
             font-size: 18px;
         }
+
+        /* ---------- TEAM ---------- */
 
         .team {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 18px;
         }
 
         .member {
             text-align: center;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            padding: 22px 18px;
+            border: 1px solid #d7d7d7;
+            background: #fafafa;
         }
 
         .member img {
-            width: 130px;
-            height: 130px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 10px;
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background: #eeeeee;
         }
 
         .member h3 {
             margin: 5px 0;
+            color: #111;
         }
 
         .role {
             font-weight: bold;
-            margin-bottom: 10px;
+            color: #555;
+            margin-bottom: 12px;
         }
+
+        .member p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        /* ---------- AUDIENCE ---------- */
+
+        .audience-text {
+            border-left: 4px solid #111;
+            padding-left: 20px;
+        }
+
+        /* ---------- TOOLS ---------- */
 
         .tools {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 18px;
         }
 
         .tool {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
+    border-top: 5px solid #111;
+    padding: 22px;
+    background: #f7f7f7;
+}
+
+.tool:nth-child(1) {
+    border-top-color: #2e7d32;
+}
+
+.tool:nth-child(2) {
+    border-top-color: #f39c12;
+}
+
+.tool:nth-child(3) {
+    border-top-color: #c0392b;
+}
+
+        .tool h3 {
+            margin-top: 0;
+            color: #111;
         }
 
-        .links {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+        /* ---------- NOVELTY ---------- */
 
-        .links a {
-            background: #111;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+   .novelty {
+    background: #eee8c8;
+    color: #222;
+    border: none;
+}
 
-        .links a:hover {
-            background: #444;
-        }
+.novelty h2 {
+    color: #111;
+}
+
+.novelty strong {
+    color: #111;
+}
+
+        /* ---------- NAVIGATION ---------- */
+
+       .links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    width: 210px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+
+.links a:nth-child(1) {
+    background: #2e7d32;
+}
+
+.links a:nth-child(2) {
+    background: #d88900;
+}
+
+.links a:nth-child(3) {
+    background: #c0392b;
+}
+
+.links a:hover {
+    opacity: 0.8;
+}
+
+        /* ---------- FOOTER ---------- */
 
         footer {
             text-align: center;
             padding: 30px;
             color: #666;
+            font-size: 14px;
         }
 
-        @media (max-width: 800px) {
+        /* ---------- RESPONSIVE ---------- */
+
+        @media (max-width: 950px) {
             .team {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -135,9 +229,21 @@
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
             .team {
                 grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 25px;
+            }
+
+            .intro {
+                padding: 30px 20px;
             }
         }
     </style>
@@ -150,6 +256,7 @@
     <p>2017–2022 Transformation Roadmap</p>
 </header>
 
+
 <main>
 
     <section class="intro">
@@ -160,6 +267,7 @@
         </p>
     </section>
 
+
     <section>
         <h2>Our Team</h2>
 
@@ -167,8 +275,11 @@
 
             <div class="member">
                 <img src="rita.jpg" alt="Rita Sharipova">
+
                 <h3>Rita Sharipova</h3>
+
                 <div class="role">Roadmap Sequencer</div>
+
                 <p>
                     Organized NIKE's transformation initiatives into Crawl, Walk,
                     and Run phases, identified dependencies, and used NIKE's
@@ -177,10 +288,14 @@
                 </p>
             </div>
 
+
             <div class="member">
                 <img src="ngan.jpg" alt="Ngan Hang">
+
                 <h3>Ngan Hang</h3>
+
                 <div class="role">Governance Designer</div>
+
                 <p>
                     Developed the recurring governance decisions and RACI structure
                     for the transformation. Assigned realistic NIKE leadership
@@ -188,10 +303,14 @@
                 </p>
             </div>
 
+
             <div class="member">
                 <img src="khushi.jpg" alt="Khushi Patel">
+
                 <h3>Khushi Patel</h3>
+
                 <div class="role">Dashboard Designer</div>
+
                 <p>
                     Designed the QBR dashboard using leading and lagging metrics.
                     Connected performance measures to specific initiatives and
@@ -199,10 +318,14 @@
                 </p>
             </div>
 
+
             <div class="member">
                 <img src="anh.jpg" alt="Anh Minh Ho">
+
                 <h3>Anh Minh Ho</h3>
+
                 <div class="role">Site Editor</div>
+
                 <p>
                     Integrated the team's three deliverables into one coherent site.
                     Established the shared repository, naming contract, .gitignore,
@@ -214,15 +337,19 @@
         </div>
     </section>
 
+
     <section>
         <h2>Target Audience</h2>
 
-        <p>
-            This site is designed for <strong>senior leaders and transformation
-            decision-makers</strong> who need a concise view of how a digital
-            transformation should be sequenced, governed, and monitored.
-        </p>
+        <div class="audience-text">
+            <p>
+                This site is designed for <strong>senior leaders and transformation
+                decision-makers</strong> who need a concise view of how a digital
+                transformation should be sequenced, governed, and monitored.
+            </p>
+        </div>
     </section>
+
 
     <section>
         <h2>What This Site Provides</h2>
@@ -231,22 +358,27 @@
 
             <div class="tool">
                 <h3>Transformation Roadmap</h3>
+
                 <p>
                     Shows what initiatives should happen first, what can be tested
                     next, and what capabilities are required before scaling.
                 </p>
             </div>
 
+
             <div class="tool">
                 <h3>Governance RACI</h3>
+
                 <p>
                     Shows who is Responsible, Accountable, Consulted, and Informed
                     for recurring transformation decisions.
                 </p>
             </div>
 
+
             <div class="tool">
                 <h3>QBR Dashboard</h3>
+
                 <p>
                     Shows whether initiatives are progressing toward their targets
                     and identifies decisions that require leadership attention.
@@ -261,7 +393,8 @@
         </p>
     </section>
 
-    <section>
+
+    <section class="novelty">
         <h2>Our Novelty</h2>
 
         <p>
@@ -289,6 +422,7 @@
         </p>
     </section>
 
+
     <section>
         <h2>Explore the Analysis</h2>
 
@@ -301,8 +435,11 @@
 
 </main>
 
+
 <footer>
-    <p>NIKE Consumer Direct Transformation | Digital Transformation Project</p>
+    <p>
+        NIKE Consumer Direct Transformation | Digital Transformation Project
+    </p>
 </footer>
 
 </body>
