@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE Consumer Direct Transformation</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 38px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .member {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .member img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .member h3 {
+            margin: 5px 0;
+        }
+
+        .role {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .tool {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            background: #111;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .links a:hover {
+            background: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+        }
+
+        @media (max-width: 800px) {
+            .team {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tools {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .team {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>NIKE Consumer Direct Transformation</h1>
+    <p>2017–2022 Transformation Roadmap</p>
+</header>
+
+<main>
+
+    <section class="intro">
+        <p>
+            Our team analyzed NIKE's digital transformation and translated the
+            published case into three connected management tools: a transformation
+            roadmap, a governance RACI, and a quarterly business review dashboard.
+        </p>
+    </section>
+
+    <section>
+        <h2>Our Team</h2>
+
+        <div class="team">
+
+            <div class="member">
+                <img src="rita.jpg" alt="Rita Sharipova">
+                <h3>Rita Sharipova</h3>
+                <div class="role">Roadmap Sequencer</div>
+                <p>
+                    Organized NIKE's transformation initiatives into Crawl, Walk,
+                    and Run phases, identified dependencies, and used NIKE's
+                    published disclosures to establish the sequence and rationale
+                    for the roadmap.
+                </p>
+            </div>
+
+            <div class="member">
+                <img src="ngan.jpg" alt="Ngan Hang">
+                <h3>Ngan Hang</h3>
+                <div class="role">Governance Designer</div>
+                <p>
+                    Developed the recurring governance decisions and RACI structure
+                    for the transformation. Assigned realistic NIKE leadership
+                    roles and provided Accountable rationales for decision ownership.
+                </p>
+            </div>
+
+            <div class="member">
+                <img src="khushi.jpg" alt="Khushi Patel">
+                <h3>Khushi Patel</h3>
+                <div class="role">Dashboard Designer</div>
+                <p>
+                    Designed the QBR dashboard using leading and lagging metrics.
+                    Connected performance measures to specific initiatives and
+                    highlighted leadership decisions required during the current quarter.
+                </p>
+            </div>
+
+            <div class="member">
+                <img src="anh.jpg" alt="Anh Minh Ho">
+                <h3>Anh Minh Ho</h3>
+                <div class="role">Site Editor</div>
+                <p>
+                    Integrated the team's three deliverables into one coherent site.
+                    Established the shared repository, naming contract, .gitignore,
+                    and branch protection, maintained the source log, and performed
+                    the cross-deliverable consistency check.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Target Audience</h2>
+
+        <p>
+            This site is designed for <strong>senior leaders and transformation
+            decision-makers</strong> who need a concise view of how a digital
+            transformation should be sequenced, governed, and monitored.
+        </p>
+    </section>
+
+    <section>
+        <h2>What This Site Provides</h2>
+
+        <div class="tools">
+
+            <div class="tool">
+                <h3>Transformation Roadmap</h3>
+                <p>
+                    Shows what initiatives should happen first, what can be tested
+                    next, and what capabilities are required before scaling.
+                </p>
+            </div>
+
+            <div class="tool">
+                <h3>Governance RACI</h3>
+                <p>
+                    Shows who is Responsible, Accountable, Consulted, and Informed
+                    for recurring transformation decisions.
+                </p>
+            </div>
+
+            <div class="tool">
+                <h3>QBR Dashboard</h3>
+                <p>
+                    Shows whether initiatives are progressing toward their targets
+                    and identifies decisions that require leadership attention.
+                </p>
+            </div>
+
+        </div>
+
+        <p>
+            Together, these tools help leadership connect
+            <strong>what should happen, who makes the decisions, and how progress is measured.</strong>
+        </p>
+    </section>
+
+    <section>
+        <h2>Our Novelty</h2>
+
+        <p>
+            Our team did not simply summarize NIKE's digital transformation.
+            We converted the published case into an integrated management framework
+            that connects <strong>sequence, governance, and performance measurement.</strong>
+        </p>
+
+        <p>
+            First, we organized NIKE's initiatives into a
+            <strong>Crawl/Walk/Run roadmap</strong> with explicit dependencies to
+            show how foundational capabilities support later consumer-facing
+            initiatives. Second, we translated the transformation into recurring
+            <strong>governance decisions</strong>, assigning realistic NIKE
+            leadership roles as Accountable and connecting each decision to the
+            roadmap. Third, we created a <strong>QBR dashboard</strong> that connects
+            leading and lagging metrics to named initiatives and identifies the
+            leadership decisions required in the current quarter.
+        </p>
+
+        <p>
+            Our additional contribution as a team is the integration of these three
+            views into one consistent artifact, with shared initiative names,
+            decision connections, evidence, and cross-deliverable consistency checks.
+        </p>
+    </section>
+
+    <section>
+        <h2>Explore the Analysis</h2>
+
+        <div class="links">
+            <a href="roadmap.html">Transformation Roadmap</a>
+            <a href="raci.html">Governance RACI</a>
+            <a href="dashboard.html">QBR Dashboard</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>NIKE Consumer Direct Transformation | Digital Transformation Project</p>
+</footer>
+
+</body>
+</html>
