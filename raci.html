@@ -5,181 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Governance RACI | Nike Transformation Roadmap</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #222;
-            background: #f5f5f5;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #111;
-            color: white;
-            padding: 36px 20px;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header h1 {
-            margin: 0 0 8px;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            margin: 4px 0;
-            color: #ddd;
-        }
-
-        nav {
-            background: white;
-            border-bottom: 1px solid #ddd;
-            padding: 12px 20px;
-        }
-
-        nav .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: #222;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 35px auto;
-            padding: 0 20px 50px;
-        }
-
-        section {
-            background: white;
-            padding: 28px;
-            margin-bottom: 28px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        h2 {
-            margin-top: 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #222;
-        }
-
-        h3 {
-            margin-bottom: 8px;
-        }
-
-        .intro {
-            font-size: 1.05rem;
-        }
-
-        .table-container {
-            overflow-x: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 950px;
-            margin-top: 18px;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 12px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background: #222;
-            color: white;
-            font-weight: 700;
-        }
-
-        tr:nth-child(even) {
-            background: #f8f8f8;
-        }
-
-        .decision-number {
-            font-weight: 700;
-            text-align: center;
-            width: 55px;
-        }
-
-        .raci-cell {
-            text-align: center;
-            font-weight: 700;
-            width: 95px;
-        }
-
-        .connection-list {
-            padding-left: 25px;
-        }
-
-        .connection-list li {
-            margin-bottom: 18px;
-        }
-
-        .rationale {
-            padding: 18px;
-            margin: 16px 0;
-            background: #f8f8f8;
-            border-left: 4px solid #222;
-        }
-
-        .rationale h3 {
-            margin-top: 0;
-        }
-
-        .summary-list {
-            padding-left: 25px;
-        }
-
-        .summary-list li {
-            margin-bottom: 8px;
-        }
-
-        .note {
-            margin-top: 20px;
-            padding: 16px;
-            background: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px 20px;
-            color: #666;
-            font-size: 0.9rem;
-        }
-
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; background: #f5f5f5; line-height: 1.6; }
+        header { background: #111; color: white; padding: 36px 20px; }
+        .header-content { max-width: 1200px; margin: 0 auto; }
+        header h1 { margin: 0 0 8px; font-size: 2.2rem; }
+        header p { margin: 4px 0; color: #ddd; }
+        nav { background: white; border-bottom: 1px solid #ddd; padding: 12px 20px; }
+        nav .nav-content { max-width: 1200px; margin: 0 auto; display: flex; gap: 20px; flex-wrap: wrap; }
+        nav a { color: #222; text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 1200px; margin: 35px auto; padding: 0 20px 50px; }
+        section { background: white; padding: 28px; margin-bottom: 28px; border: 1px solid #ddd; border-radius: 8px; }
+        h2 { margin-top: 0; padding-bottom: 10px; border-bottom: 2px solid #222; }
+        h3 { margin-bottom: 8px; }
+        .intro { font-size: 1.05rem; }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; min-width: 950px; margin-top: 18px; }
+        th, td { border: 1px solid #ccc; padding: 12px; text-align: left; vertical-align: top; }
+        th { background: #222; color: white; font-weight: 700; }
+        tr:nth-child(even) { background: #f8f8f8; }
+        .decision-number { font-weight: 700; text-align: center; width: 55px; }
+        .raci-cell { text-align: center; font-weight: 700; width: 95px; }
+        .connection-list { padding-left: 25px; }
+        .connection-list li { margin-bottom: 18px; }
+        .rationale { padding: 18px; margin: 16px 0; background: #f8f8f8; border-left: 4px solid #222; }
+        .rationale h3 { margin-top: 0; }
+        .summary-list { padding-left: 25px; }
+        .summary-list li { margin-bottom: 8px; }
+        .note { margin-top: 20px; padding: 16px; background: #f0f0f0; border: 1px solid #ccc; border-radius: 6px; }
+        footer { text-align: center; padding: 25px 20px; color: #666; font-size: 0.9rem; }
         @media (max-width: 700px) {
-            header h1 {
-                font-size: 1.7rem;
-            }
-
-            section {
-                padding: 20px;
-            }
+            header h1 { font-size: 1.7rem; }
+            section { padding: 20px; }
         }
     </style>
 </head>
@@ -219,8 +77,16 @@
             <strong>R</strong> = Responsible,
             <strong>A</strong> = Accountable,
             <strong>C</strong> = Consulted,
-            <strong>I</strong> = Informed.
+            <strong>I</strong> = Informed,
+            <strong>A/R</strong> = the single Accountable role who also does the work.
             Each decision has exactly one Accountable role.
+        </div>
+
+        <div class="note">
+            <strong>Scope of roles:</strong> Role titles reflect NIKE's executive team from April 2020,
+            when the CEO, COO, CFO, and President of Consumer &amp; Marketplace were in the roles shown.
+            This covers the later Walk and Run phases. Governance for the 2017 start of Crawl
+            would sit under the prior leadership, and we have not mapped that period.
         </div>
     </section>
 
@@ -276,7 +142,7 @@
                         <td class="raci-cell">I</td>
                         <td class="raci-cell">A</td>
                         <td class="raci-cell">C</td>
-                        <td class="raci-cell">C</td>
+                        <td class="raci-cell">R</td>
                     </tr>
 
                     <tr>
@@ -347,8 +213,8 @@
 
             <li>
                 <strong>Architecture Standards</strong><br>
-                2X Speed &amp; End-to-End Digital Capabilities → Nike App at Retail →
-                Consumer Experiences at Scale.
+                2X Speed and End-to-End Digital Capabilities → Nike App at Retail →
+                Nike Consumer Experiences at Scale.
             </li>
 
             <li>
@@ -370,7 +236,7 @@
 
             <li>
                 <strong>Consumer Experience Scale-Up</strong><br>
-                Nike App at Retail / NIKE Hyperlive → Consumer Experiences at Scale.
+                Nike App at Retail / NIKE Hyperlive → Nike Consumer Experiences at Scale.
             </li>
 
             <li>
@@ -386,74 +252,79 @@
         <div class="rationale">
             <h3>1. Budget Allocation — John Donahoe, President &amp; CEO</h3>
             <p>
-                The CEO is accountable because transformation funding requires enterprise-level
-                trade-offs across consumer experience, technology, data/analytics, and other
-                strategic investments. Nike's Consumer Direct Acceleration strategy involved
-                investment across digital consumer experiences, data and analytics, and an
-                end-to-end technology foundation.
+                Transformation funding requires enterprise-level trade-offs across consumer
+                experience, data and analytics, and technology investment, which are the areas
+                Consumer Direct Acceleration spans.
+                <em>Sources: NIKE FY2020 and FY2022 Form 10-K.</em>
             </p>
         </div>
 
         <div class="rationale">
             <h3>2. Architecture Standards — Andrew Campion, COO</h3>
             <p>
-                The COO is accountable because Nike assigned Campion responsibility for global
-                technology and digital transformation during the transformation period. This makes
-                the role appropriate for resolving architecture decisions that affect whether
-                capabilities developed during Crawl and Walk can integrate with Nike's broader
-                technology foundation.
+                From April 2020, Campion's remit included global technology and digital
+                transformation, so he is positioned to decide whether Crawl and Walk capabilities
+                fit the end-to-end technology foundation.
+                <em>Sources: NIKE leadership announcement, April 2020 (reported by Just Style and
+                Retail Dive); NIKE FY2022 Form 10-K.</em>
             </p>
         </div>
 
         <div class="rationale">
             <h3>3. Data Governance — Andrew Campion, COO</h3>
             <p>
-                The COO is accountable because the role included leadership of Nike's global
-                technology and digital transformation. As Nike expanded its use of data and
-                analytics across consumer and retail capabilities, consistent decisions about
-                data quality, access, and integration would require enterprise-level technology
-                governance.
+                Data quality, access, and integration standards need one enterprise technology
+                owner, and Campion holds that role as COO. O'Neill is Responsible because consumer
+                data originates in the Nike Direct and consumer organization she leads.
+                <em>Sources: NIKE leadership announcement, April 2020; NIKE FY2022 Form 10-K.</em>
             </p>
         </div>
 
         <div class="rationale">
             <h3>4. Initiative Prioritization — John Donahoe, President &amp; CEO</h3>
             <p>
-                The CEO is accountable because prioritization requires resolving trade-offs across
-                technology, consumer experience, financial investment, and organizational capacity.
-                An enterprise-level decision maker is needed when resources must be shifted between
-                initiatives or when an initiative must move, pause, or receive additional investment.
+                When resources are constrained, trade-offs cross technology, consumer, finance,
+                and organizational capacity, so the decision must sit above any single function.
+                <em>Source: team analysis based on the executive structure in the NIKE FY2022
+                Form 10-K.</em>
             </p>
         </div>
 
         <div class="rationale">
             <h3>5. Vendor &amp; Partnership Decisions — Andrew Campion, COO</h3>
             <p>
-                The COO is accountable because Campion's responsibilities included both global
-                technology and digital transformation and procurement. This combination makes the
-                role appropriate for governing major technology and partnership decisions that
-                affect the broader transformation.
+                Campion's responsibilities included procurement alongside technology and digital
+                transformation, which makes the COO the natural owner of major external technology
+                relationships. Procurement later moved to the CFO in 2023, outside our window.
+                <em>Sources: NIKE leadership announcement, April 2020 (Just Style); NIKE press
+                release, May 2023.</em>
             </p>
         </div>
 
         <div class="rationale">
             <h3>6. Consumer Experience Scale-Up — Heidi O'Neill, President, Consumer &amp; Marketplace</h3>
             <p>
-                O'Neill is accountable because her organization was responsible for Nike's consumer
-                and marketplace activities, including Nike Direct. This makes the role directly
-                connected to deciding whether consumer-facing capabilities tested in limited
-                deployments are ready to expand more broadly.
+                O'Neill previously led Nike Direct and, from April 2020, led Nike's global sales
+                and direct operations, so she owns the call on whether a Walk capability is ready
+                for broader NIKE Direct or marketplace rollout.
+                <em>Sources: NIKE leadership announcement, April 2020 (Retail Dive); NIKE FY2022
+                Form 10-K.</em>
             </p>
         </div>
 
         <div class="rationale">
             <h3>7. Transformation Operating Model — John Donahoe, President &amp; CEO</h3>
             <p>
-                The CEO is accountable because operating-model changes affect responsibilities and
-                coordination across multiple executive functions. This is particularly relevant to
-                Nike's transformation because the company made leadership and operating-model changes
-                intended to streamline and accelerate execution of its Consumer Direct strategy.
+                Changing responsibilities across several executive functions requires CEO
+                authority. Donahoe's first major move in 2020 was reorganizing the senior team.
+                <em>Sources: Bloomberg, April 2020; NIKE FY2022 Form 10-K.</em>
             </p>
+        </div>
+
+        <div class="note">
+            <strong>Concentration of authority:</strong> Campion is Accountable for three decisions
+            (architecture, data governance, vendors) because his role combined technology and
+            procurement. If these decisions came into conflict, the CEO would be the tiebreaker.
         </div>
     </section>
 
@@ -461,7 +332,7 @@
         <h2>Governance Decision Summary</h2>
 
         <p>
-            The following decisions should be reflected in the QBR dashboard's
+            The following decisions feed the QBR dashboard's
             <strong>“Decisions Required This Quarter”</strong> section:
         </p>
 
@@ -474,13 +345,6 @@
             <li>Consumer Experience Scale-Up</li>
             <li>Transformation Operating Model</li>
         </ol>
-
-        <div class="note">
-            <strong>Cross-page consistency:</strong>
-            Person C should use these same decision names in the QBR dashboard so that the
-            RACI and dashboard remain consistent. The dashboard's “Decisions Required This
-            Quarter” section should reflect the governance decisions identified in this RACI.
-        </div>
     </section>
 
 </main>
